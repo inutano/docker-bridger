@@ -20,7 +20,7 @@ RUN apt-get -y update && \
 
 WORKDIR /src
 ENV VERSION 2014-12-01
-RUN wget 'https://sourceforge.net/projects/rnaseqassembly/files/Bridger_r${VERSION}.tar.gz' && \
+RUN wget "https://sourceforge.net/projects/rnaseqassembly/files/Bridger_r${VERSION}.tar.gz" && \
     tar zxvf Bridger_r${VERSION}.tar.gz && \
     cd Bridger_r${VERSION} && \
     ./configure && \
