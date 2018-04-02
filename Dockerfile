@@ -25,7 +25,7 @@ RUN wget "https://sourceforge.net/projects/rnaseqassembly/files/Bridger_r${VERSI
     cd Bridger_r${VERSION} && \
     ./configure && \
     make && \
-    cp -r /src/Bridger_r${VERSION}/ /usr/bin && \
-    ln -s /usr/bin/Bridger.pl /usr/bin/bridger
+    cp -r /src/Bridger_r${VERSION} /usr/bin && \
+    ln -s /usr/bin/Bridger_r${VERSION}/Bridger.pl /usr/bin/bridger
 
 CMD /bin/bash
