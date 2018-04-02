@@ -11,5 +11,5 @@ Example:
 ```
 $ ls
 left.fastq.gz right.fastq.gz
-$ docker run -v `pwd`:/data -w /data inutano/bridger:0.1.0 bridger --seqType fq --left /data/left.fastq.gz --right /data/right.fastq.gz --CPU 4
+$ docker run -v `pwd`:/data -w /data inutano/bridger:0.1.2 bridger --seqType fq --left /data/left.fastq.gz --right /data/right.fastq.gz --CPU 4
 ```
